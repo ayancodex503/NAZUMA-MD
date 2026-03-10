@@ -1,0 +1,218 @@
+{
+  "name": "NAZUMA-MD",
+  "description": "🤖 Advanced WhatsApp Bot with Multi-Device Support | Created by AYAN CODEX",
+  "logo": "https://files.catbox.moe/brlkte.jpg",
+  "keywords": [
+    "whatsapp-bot",
+    "nazuma-md",
+    "javascript",
+    "whatsapp",
+    "bot",
+    "multi-device",
+    "baileys",
+    "md-bot",
+    "whatsapp-api"
+  ],
+  "repository": "https://github.com/AYAN-CODEX/NAZUMA-MD",
+  "success_url": "/",
+  "stack": "container",
+  
+  "env": {
+    "SESSION_ID": {
+      "description": "🔐 Your WhatsApp session ID - Get it from pairing code or QR scan",
+      "required": true,
+      "value": "",
+      "placeholder": "nazuma~your-session-id-here"
+    },
+    
+    "PREFIX": {
+      "description": "🎯 Command prefix for the bot (default: .)",
+      "required": false,
+      "value": "."
+    },
+    
+    "MODE": {
+      "description": "🤖 Bot operation mode: public/private/inbox/groups",
+      "required": false,
+      "value": "public"
+    },
+    
+    "OWNER_NUMBER": {
+      "description": "👑 Bot owner's WhatsApp number (without +)",
+      "required": false,
+      "value": "258833406646"
+    },
+    
+    "OWNER_NAME": {
+      "description": "📝 Bot owner's name",
+      "required": false,
+      "value": "AYAN CODEX"
+    },
+    
+    "BOT_NAME": {
+      "description": "🤖 Your bot's display name",
+      "required": false,
+      "value": "ƝƛȤƲMƛ MƊ"
+    },
+    
+    "AUTO_STATUS_SEEN": {
+      "description": "👁️ Auto-view status updates: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_STATUS_REACT": {
+      "description": "❤️ Auto-react to status updates: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_STATUS_REPLY": {
+      "description": "💬 Auto-reply to status updates: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_STATUS_MSG": {
+      "description": "📨 Custom message for status replies",
+      "required": false,
+      "value": "*SEEN YOUR STATUS BY ƝƛȤƲMƛ MƊ🤍*"
+    },
+    
+    "WELCOME": {
+      "description": "👋 Enable welcome/goodbye messages in groups: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "ADMIN_EVENTS": {
+      "description": "👑 Notify about admin promotions/demotions: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "ANTI_LINK": {
+      "description": "🔗 Block links in groups: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "ANTI_LINK_KICK": {
+      "description": "👢 Kick members who post links: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "ANTI_BAD": {
+      "description": "🚫 Block bad words: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "ANTI_DELETE": {
+      "description": "🗑️ Detect and show deleted messages: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "ANTI_CALL": {
+      "description": "📞 Auto-reject calls and warn caller: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "ANTI_VV": {
+      "description": "👁️ Allow viewing view-once messages: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_TYPING": {
+      "description": "⌨️ Show typing indicator: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_RECORDING": {
+      "description": "🎤 Show recording indicator: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_REPLY": {
+      "description": "🤖 Auto-reply to messages using autoreply.json: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_VOICE": {
+      "description": "🔊 Auto-respond with voice messages: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_STICKER": {
+      "description": "🖼️ Auto-respond with stickers: true/false",
+      "required": false,
+      "value": "true"
+    },
+    
+    "AUTO_REACT": {
+      "description": "😊 Auto-react to all messages: true/false",
+      "required": false,
+      "value": "false"
+    },
+    
+    "ALWAYS_ONLINE": {
+      "description": "📱 Show bot as always online: true/false",
+      "required": false,
+      "value": "false"
+    },
+    
+    "MENU_IMAGE_URL": {
+      "description": "🖼️ URL for menu image (JPG/PNG)",
+      "required": false,
+      "value": "https://files.catbox.moe/anvhs2.png"
+    },
+    
+    "ALIVE_IMG": {
+      "description": "🖼️ URL for alive command image",
+      "required": false,
+      "value": "https://files.catbox.moe/anvhs2.png"
+    },
+    
+    "LIVE_MSG": {
+      "description": "💬 Custom message for alive command",
+      "required": false,
+      "value": "> I'm Live Now *ƝƛȤƲMƛ MƊ*⚡"
+    }
+  },
+
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  
+  "addons": [
+    {
+      "plan": "heroku-postgresql:mini"
+    }
+  ],
+  
+  "stack": "heroku-24",
+  
+  "scripts": {
+    "postdeploy": "npm install"
+  }
+}
