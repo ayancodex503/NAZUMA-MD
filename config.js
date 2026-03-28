@@ -22,7 +22,7 @@ global.bot = {
   name: "QUEEN NAZUMA MINI",
   api: "https://nexevo.onrender.com",
   web: "https://nexevo.onrender.com",
-  photo: "https://files.catbox.moe/28bg4c.jpg",
+  photo: "https://files.catbox.moe/9jbw55.jpg",
   group: "https://chat.whatsapp.com/Gyt9bKWCwJlHuXwNfqQkhq?mode=gi_t",
       channel: "https://whatsapp.com/channel/0029VbCHFQTAYlUJU7q3Vt2x",
   newsletter: "120363407904372384",
