@@ -68,14 +68,14 @@ export default {
       const mainMenuText = `
 ✧ 💖 *Hello, ${sender}!* 💖 ✧
 
-   *🌷ƢƲЄЄƝ ƝƛȤƲMƛ MƖƝƖ💧*
-╭•👤 *User:* ${sender} 
-│•🤖 *Bot:* ${botType}
-│•🕒 *Time:* ${tiempo2}
-│•📅 *Date:* ${tiempo}
-│•⏳ *Active:* ${uptime}
-│•👥 *Users:* ${users}
-╰•📱 *Device:* ${device}
+   *🌷ǫᴜᴇᴇɴ ɴᴀᴢᴜᴍᴀ ᴍɪɴɪ💧*
+╭•👤 *ᴜsᴇʀ:* ${sender} 
+│•🤖 *ʙᴏᴛ:* ${botType}
+│•🕒 *ᴛɪᴍᴇ:* ${tiempo2}
+│•📅 *ᴅᴀᴛᴇ:* ${tiempo}
+│•⏳ *ᴀᴄᴛɪᴠᴇ:* ${uptime}
+│•👥 *ᴜsᴇʀs:* ${users}
+╰•📱 *ᴅᴇᴠɪᴄᴇ:* ${device}
 `.trim()
 
       // Build interactive list sections for all categories (NO QUICK ACTIONS)
@@ -120,28 +120,28 @@ export default {
         {
           name: 'single_select',
           buttonParamsJson: JSON.stringify({
-            title: 'ƝƛȤƲMƛ ƇƠMMƛƊƧ',
+            title: 'ǫᴜᴇᴇɴ ɴᴀᴢᴜᴍᴀ ᴄᴍᴅs',
             sections: categorySections
           })
         },
         {
           name: 'cta_url',
           buttonParamsJson: JSON.stringify({
-            display_text: '⭐ ƇӇƛƝƝЄԼ ƠƑƇ',
+            display_text: '⭐ ᴍʏ ᴄʜᴀɴɴᴇʟ',
             url: global.bot.channel || 'https://whatsapp.com/channel/0029VbCHFQTAYlUJU7q3Vt2x'
           })
         },
         {
           name: 'cta_url',
           buttonParamsJson: JSON.stringify({
-            display_text: '✨ ƓƦƠƲƤ ƠƑƇ',
+            display_text: '✨ ᴍʏ ɢʀᴏᴜᴘ',
             url: global.bot.group || 'https://chat.whatsapp.com/Gyt9bKWCwJlHuXwNfqQkhq'
           })
         },
         {
           name: 'cta_url',
           buttonParamsJson: JSON.stringify({
-            display_text: '🌟 ƦЄƤƠ ƁƠƬ',
+            display_text: '🌟 ᴍʏ ʀᴇᴘᴏ',
             url: global.bot.github || 'https://github.com/ayancodex503/QUEEN-NAZUMA-MINI'
           })
         }
@@ -172,9 +172,9 @@ export default {
         // Fallback: Send list directly
         await client.sendList(
           m.chat,
-          'ƢƲЄЄƝ ƝƛȤƲMƛ MЄƝƲ',
+          '💧ǫᴜᴇᴇɴ ɴᴀᴢᴜᴍᴀ ᴍɪɴɪ ᴄᴏᴍᴍᴀɴᴅs💧',
           mainMenuText,
-          'ƝƛȤƲMƛ ƇƠMMƛƊƧ',
+          '💧ǫᴜᴇᴇɴ ɴᴀᴢᴜᴍᴀ ᴍɪɴɪ ᴄᴍᴅs💧',
           categorySections,
           m
         )

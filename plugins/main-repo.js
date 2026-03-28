@@ -86,7 +86,7 @@ export default {
       const botId = client.user.id.split(':')[0] + '@s.whatsapp.net';
       const botSettings = global.db.data.settings[botId] || {};
       const botname = botSettings.namebot2 || 'QUEEN NAZUMA MINI';
-      const banner = botSettings.banner || 'https://files.catbox.moe/deznqj.jpg';
+      const banner = botSettings.banner || 'https://files.catbox.moe/9jbw55.jpg';
 
       const stars = formatNumber(repoInfo.stargazers_count);
       const forks = formatNumber(repoInfo.forks_count);
@@ -108,27 +108,27 @@ export default {
 
 🐙 *GitHub Repository*
 
-📌 *Name:* ${REPO_OWNER}/${REPO_NAME}
-📝 *Description:* ${description}
+📌 *ɴᴀᴍᴇ:* ${REPO_OWNER}/${REPO_NAME}
+📝 *ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:* ${description}
 
-⭐ *Stars:* ${stars}
-🍴 *Forks:* ${forks}
-👀 *Watchers:* ${watchers}
-⚠️ *Issues:* ${issues}
-💾 *Size:* ${size} MB
-📜 *License:* ${license}
-💻 *Language:* ${language}
+⭐ *sᴛᴀʀs:* ${stars}
+🍴 *ғᴏʀᴋs:* ${forks}
+👀 *ᴡᴀᴛᴄʜᴇʀs:* ${watchers}
+⚠️ *ɪssᴜᴇs:* ${issues}
+💾 *sɪᴢᴇ:* ${size} MB
+📜 *ʟɪsᴇɴᴄᴇ:* ${license}
+💻 *ʟᴀɴɢᴜᴀɢᴇ:* ${language}
 
-📅 *Created:* ${createdAt}
-🔄 *Updated:* ${updatedAt}
+📅 *ᴄʀᴇᴀᴛᴇᴅ:* ${createdAt}
+🔄 *ᴜᴘᴅᴀᴛᴇᴅ:* ${updatedAt}
 
-🔖 *Latest Commit:*
+🔖 *ʟᴀᴛᴇsᴛ ᴄᴏᴍᴍɪᴛ:*
 ┣ 📝 ${commitMessage}
 ┣ 🔑 \`${commitHash}\`
 ┣ 👤 ${commitAuthor}
 ┗ 📅 ${commitDate}
 
-🔗 *Links:*
+🔗 *ʟɪɴᴋs:*
 ┣ 🌐 *Repository:* ${REPO_URL}
 ┣ 📢 *Channel:* https://whatsapp.com/channel/0029VbCHFQTAYlUJU7q3Vt2x
 ┗ 💬 *Group:* https://chat.whatsapp.com/Gyt9bKWCwJlHuXwNfqQkhq
